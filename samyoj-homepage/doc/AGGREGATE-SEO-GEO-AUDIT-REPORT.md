@@ -272,7 +272,7 @@ samyoj-homepage/
 | Location | Text | Destination | Status |
 |----------|------|-------------|--------|
 | Hero (primary) | Start for FREE | app.samyoj.com | ✓ Live |
-| Hero (secondary) | Book a Demo | Calendly | ✓ Live |
+| Hero (secondary) | Book a Demo | contact.html | ✓ Live |
 | Nav | Start for FREE | app.samyoj.com | ✓ Live |
 | Feature cards (×20) | Learn more → | # | ✗ Broken |
 | Features hero | Connect WhatsApp | # | ✗ Broken |
@@ -280,7 +280,7 @@ samyoj-homepage/
 | Features CTA | Start Your Free Trial | # | ✗ Broken |
 | Industries CTA | Start for FREE | app.samyoj.com | ✓ Live |
 | Home bottom | Start Your FREE Trial | app.samyoj.com | ✓ Live |
-| Home bottom | Book a Demo | Calendly | ✓ Live |
+| Home bottom | Book a Demo | contact.html | ✓ Live |
 
 ### Internal Linking
 - Consistent navigation across all pages.

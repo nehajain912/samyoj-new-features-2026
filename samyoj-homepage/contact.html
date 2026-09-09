@@ -4549,6 +4549,29 @@
         document.getElementById('success').style.display = 'block';
         window.open('https://wa.me/918839888531?text=' + encodeURIComponent(buildMessage()), '_blank', 'noopener');
       });
+
+      // Auto-select interest option from URL query (e.g., ?interest=Demo)
+      try {
+        var urlParams = new URLSearchParams(window.location.search);
+        var interestVal = urlParams.get('interest');
+        if (interestVal) {
+          var sel = document.getElementById('interest');
+          if (sel) {
+            for (var i = 0; i < sel.options.length; i++) {
+              if (sel.options[i].value.toLowerCase() === interestVal.toLowerCase()) {
+                sel.selectedIndex = i;
+                break;
+              }
+            }
+            var formCard = document.querySelector('.cw-form-card');
+            if (formCard) {
+              setTimeout(function () {
+                formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }, 200);
+            }
+          }
+        }
+      } catch (err) {}
     })();
   </script>
   <script>

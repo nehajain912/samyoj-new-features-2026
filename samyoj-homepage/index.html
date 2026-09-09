@@ -4484,9 +4484,9 @@
             class="custom-btn-primary">
             Start 14-Day FREE Trial <span class="arrow">&rarr;</span>
           </a>
-          <button class="custom-btn-secondary" id="custom_btn_demo">
+          <a href="https://calendly.com/teamsamyoj/30min" target="_blank" rel="noopener noreferrer" class="custom-btn-secondary" id="custom_btn_demo">
             Join Live Demo <span class="arrow">&rarr;</span>
-          </button>
+          </a>
         </div>
 
         <!-- Trust checkmarks -->
@@ -4595,89 +4595,6 @@
     </div>
   </div>
 
-  <script>
-    (function () {
-      var demoButton = document.getElementById('custom_btn_demo');
-      if (demoButton) {
-        demoButton.addEventListener('click', function (e) {
-          (function () {
-            var baseUrl = "https://app.samyoj.com/";
-            var overlayId = "as-calendly-overlay-full";
-            var utm = location.search ? "&" + location.search.slice(1) : "";
-            var calendlyUrl = baseUrl + "?hide_gdpr_banner=1&embed_type=Inline&embed_domain=" + encodeURIComponent(location.hostname) + utm;
-
-            var existing = document.getElementById(overlayId);
-            if (existing) {
-              existing.style.display = "block";
-              document.body.style.overflow = "hidden";
-              return;
-            }
-
-            var overlay = document.createElement("div");
-            overlay.id = overlayId;
-            Object.assign(overlay.style, {
-              position: "fixed",
-              inset: "0",
-              background: "rgba(0,0,0,0.55)",
-              zIndex: "999999",
-            });
-
-            var iframe = document.createElement("iframe");
-            iframe.src = calendlyUrl;
-            iframe.title = "Book an Samyoj Demo";
-            iframe.setAttribute("frameborder", "0");
-            iframe.setAttribute("allowtransparency", "true");
-            Object.assign(iframe.style, {
-              position: "absolute",
-              inset: "0",
-              width: "100%",
-              height: "100%",
-              border: "0",
-              display: "block"
-            });
-
-            var closeBtn = document.createElement("button");
-            closeBtn.innerHTML = "&times;";
-            Object.assign(closeBtn.style, {
-              position: "fixed",
-              top: "14px",
-              right: "16px",
-              width: "40px",
-              height: "40px",
-              borderRadius: "20px",
-              background: "rgba(0,0,0,0.65)",
-              color: "#fff",
-              border: "none",
-              fontSize: "24px",
-              lineHeight: "40px",
-              textAlign: "center",
-              cursor: "pointer",
-              zIndex: "1000000"
-            });
-
-            function closeOverlay() {
-              overlay.style.display = "none";
-              document.body.style.overflow = "";
-            }
-
-            closeBtn.addEventListener("click", closeOverlay);
-            overlay.addEventListener("click", function (e) {
-              if (e.target === overlay) closeOverlay();
-            });
-
-            document.addEventListener("keydown", function onEsc(e) {
-              if (e.key === "Escape") { closeOverlay(); document.removeEventListener("keydown", onEsc); }
-            });
-
-            overlay.appendChild(iframe);
-            overlay.appendChild(closeBtn);
-            document.body.appendChild(overlay);
-            document.body.style.overflow = "hidden";
-          })();
-        });
-      }
-    })();
-  </script>
   <style>
     /* Brand Logos & Video Section Styles */
     #custom-brand-video-section {
@@ -8533,10 +8450,10 @@
               <h3>Ready to <span>5X Your Revenue?</span></h3>
               <p>Join 210,000+ businesses already growing faster with Samyoj on WhatsApp.</p>
               <div class="sps-revenue-actions">
-                <button class="btn-green" onclick="window.open('https://app.samyoj.com/')">Start Your FREE Trial
-                  &rarr;</button>
-                <button class="btn-outline" onclick="window.open('https://calendly.com/d/3k8-k9q-9r3')">Book a Demo
-                  &rarr;</button>
+                <a href="https://app.samyoj.com/" class="btn-green" target="_blank" rel="noopener noreferrer">Start Your FREE Trial
+                  &rarr;</a>
+                <a href="https://calendly.com/teamsamyoj/30min" target="_blank" rel="noopener noreferrer" class="btn-outline">Book a Demo
+                  &rarr;</a>
               </div>
             </div>
             <img src="images/rocket-image.png" alt="Rocket" class="sps-rocket-img" width="1536" height="1024" loading="lazy" decoding="async"
