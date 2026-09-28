@@ -1,14 +1,14 @@
 /* Samyoj site footer — compact shared design */
 .sy-footer {
-  --sy-ink: #1a2e28;
-  --sy-muted: #6b7a74;
-  --sy-green: #03cf65;
-  --sy-green-deep: #0a8f48;
-  --sy-heading: #0f2f28;
-  --sy-line: #e6ece9;
-  --sy-icon-bg: #eaf8f0;
-  --sy-social-bg: #f3f5f4;
-  --sy-social-icon: #4a5a54;
+  --sy-ink: #0F172A;
+  --sy-muted: #64748B;
+  --sy-green: #4B2EEB;
+  --sy-green-deep: #3b22c7;
+  --sy-heading: #0F172A;
+  --sy-line: #E2E8F0;
+  --sy-icon-bg: rgba(75, 46, 235, 0.08);
+  --sy-social-bg: #F1F5F9;
+  --sy-social-icon: #64748B;
   --sy-link-icon: 14px;
   background: #fff;
   color: var(--sy-ink);

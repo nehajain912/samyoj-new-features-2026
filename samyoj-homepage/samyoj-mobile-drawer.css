@@ -1,12 +1,12 @@
 /* Samyoj mobile nav drawer — matches sidebar design mock */
 .um-nav-drawer.sy-drawer {
-  --sy-d-green: #03cf65;
-  --sy-d-green-dark: #00b859;
-  --sy-d-ink: #1a1a1a;
-  --sy-d-muted: #5c6670;
-  --sy-d-line: #ededed;
-  --sy-d-active-bg: #e8f9f0;
-  --sy-d-foot-bg: #f4f6f5;
+  --sy-d-green: #4B2EEB;
+  --sy-d-green-dark: #3b22c7;
+  --sy-d-ink: #0F172A;
+  --sy-d-muted: #64748B;
+  --sy-d-line: #E2E8F0;
+  --sy-d-active-bg: rgba(75, 46, 235, 0.08);
+  --sy-d-foot-bg: #F8FAFF;
   top: 0 !important;
   right: 0 !important;
   bottom: 0 !important;

@@ -1,0 +1,683 @@
+/* ==========================================================================
+   Samyoj Omnichannel Design System (WhatsApp • Instagram • Facebook • Ads)
+   Source: Official Samyoj Brand Guidelines & UI System (2026)
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. BRAND COLORS (Primary Identity: Modern, Vibrant, Trustworthy)
+     ------------------------------------------------------------------------ */
+  --sy-brand-indigo: #4B2EEB;   /* Primary CTAs, Navigation, Dominant action */
+  --sy-brand-purple: #7A3BFF;   /* Highlights, Active links, secondary accent */
+  --sy-brand-pink:   #FF3D8E;   /* Accents, Important elements, visual pops */
+  --sy-brand-orange: #FF8A3D;   /* Growth, Energy, Success stats */
+
+  /* Direct Aliases for Theme Integration */
+  --sy-primary:         #4B2EEB;
+  --sy-primary-hover:   #3b22c7;
+  --sy-primary-subtle:  rgba(75, 46, 235, 0.08);
+  --sy-primary-border:  rgba(75, 46, 235, 0.22);
+  --sy-primary-shadow:  0 4px 16px rgba(75, 46, 235, 0.24);
+
+  /* ------------------------------------------------------------------------
+     2. CHANNEL COLORS (Dedicated Official Identities for Badges/Indicators)
+     ------------------------------------------------------------------------ */
+  --sy-channel-whatsapp:     #25D366;
+  --sy-channel-instagram:    linear-gradient(45deg, #E4405F, #FCAF45);
+  --sy-channel-instagram-pink: #E4405F;
+  --sy-channel-instagram-orange: #FCAF45;
+  --sy-channel-facebook:     #1877F2;
+  --sy-channel-meta-ads:     #00A4FF;
+
+  /* ------------------------------------------------------------------------
+     3. SUPPORT COLORS (Status, Alerts, and Functional UI)
+     ------------------------------------------------------------------------ */
+  --sy-support-success: #10B981;
+  --sy-support-warning: #F59E0B;
+  --sy-support-error:   #EF4444;
+  --sy-support-info:    #3B82F6;
+
+  /* ------------------------------------------------------------------------
+     4. NEUTRALS & SURFACES (Clean, Modern, Slate Foundation)
+     ------------------------------------------------------------------------ */
+  --sy-neutral-bg:            #F8FAFF;  /* Main Page Background (cool soft tint) */
+  --sy-neutral-surface:       #FFFFFF;  /* Cards, Panels, Modals */
+  --sy-neutral-surface-muted: #F1F5F9;  /* Secondary sections, table strips */
+  --sy-neutral-border:        #E2E8F0;  /* Clean slate borders & dividers */
+  --sy-neutral-text-muted:    #64748B;  /* Secondary / body helper text */
+  --sy-neutral-text-primary:  #0F172A;  /* Deep Slate headings and titles */
+
+  /* ------------------------------------------------------------------------
+     5. SIGNATURE GRADIENTS (Hero accents, CTAs, Badges)
+     ------------------------------------------------------------------------ */
+  --sy-gradient-1: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);  /* Primary Brand Gradient */
+  --sy-gradient-2: linear-gradient(135deg, #EC4899 0%, #F59E0B 100%);  /* Highlight Gradient */
+  --sy-gradient-3: linear-gradient(135deg, #10B981 0%, #3B82F6 100%);  /* Growth Gradient */
+
+  /* ------------------------------------------------------------------------
+     6. GLASS & OVERLAYS
+     ------------------------------------------------------------------------ */
+  --sy-glass-white: rgba(255, 255, 255, 0.82);
+  --sy-glass-dark:  rgba(15, 23, 42, 0.65);
+}
+
+/* ==========================================================================
+   PRIMARY NAVIGATION & HEADER STYLING
+   ========================================================================== */
+
+/* Modern Sticky Navigation Header */
+.sy-nav,
+.umso-header {
+  border-bottom: 1px solid var(--sy-neutral-border) !important;
+}
+
+.sy-nav {
+  background-color: var(--sy-glass-white) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+/* Nav Links - Resting state */
+.sy-nav-links li a,
+.um-nav-links li a {
+  color: var(--sy-neutral-text-primary) !important;
+  font-weight: 600 !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Nav Links - Hover state */
+.sy-nav-links li a:hover,
+.um-nav-links li a:hover {
+  color: var(--sy-brand-indigo) !important;
+  background-color: var(--sy-primary-subtle) !important;
+}
+
+/* Nav Links - Active / Current Page State */
+.sy-nav-links li a.active,
+.sy-nav-links li a[aria-current="page"],
+.um-nav-links li a.active,
+.um-nav-links li a[aria-current="page"] {
+  background-color: var(--sy-primary-subtle) !important;
+  color: var(--sy-brand-indigo) !important;
+  border: 1px solid var(--sy-primary-border) !important;
+  box-shadow: 0 2px 10px rgba(75, 46, 235, 0.12) !important;
+  font-weight: 700 !important;
+}
+
+/* Active Nav Star Indicator */
+.um-nav-links li a.active::before,
+.um-nav-links li a[aria-current="page"]::before {
+  content: "✦" !important;
+  font-size: 13px !important;
+  color: var(--sy-brand-purple) !important;
+}
+
+/* ==========================================================================
+   BUTTONS & CTAs (60-20-10-10 Rule: Indigo Primary)
+   ========================================================================== */
+
+/* Primary Action Buttons (Signature Brand Gradient 1: Indigo -> Purple) */
+.sy-nav-btn-primary,
+.um-nav-buttons .btn.primary,
+.btn.primary,
+.btn-green,
+.custom-btn-primary,
+.feat-cta-btn,
+.sps-revenue-actions .btn.primary,
+.buttons-btn_nob6m8rpy4 .btn.primary,
+button._af9d7b85.btn.primary,
+button._e70f123e.btn.primary {
+  background: linear-gradient(135deg, #4B2EEB 0%, #7A3BFF 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(75, 46, 235, 0.32) !important;
+  font-weight: 700 !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.sy-nav-btn-primary:hover,
+.um-nav-buttons .btn.primary:hover,
+.btn.primary:hover,
+.btn-green:hover,
+.custom-btn-primary:hover,
+.feat-cta-btn:hover,
+.sps-revenue-actions .btn.primary:hover,
+.buttons-btn_nob6m8rpy4 .btn.primary:hover,
+button._af9d7b85.btn.primary:hover,
+button._e70f123e.btn.primary:hover {
+  background: linear-gradient(135deg, #3B22C7 0%, #682EEB 100%) !important;
+  border-color: transparent !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 24px rgba(75, 46, 235, 0.44) !important;
+  transform: translateY(-2px) !important;
+  text-decoration: none !important;
+}
+
+/* Instagram Gradient Button (Official Brand Gradient: Purple -> Red -> Orange/Yellow) */
+.btn-instagram-gradient {
+  background: linear-gradient(45deg, #833AB4 0%, #FD1D1D 50%, #FCAF45 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  padding: 14px 28px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 6px 22px rgba(228, 64, 95, 0.38) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.btn-instagram-gradient:hover {
+  background: linear-gradient(45deg, #6C2C9B 0%, #E01818 50%, #F59E0B 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(228, 64, 95, 0.52) !important;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+
+.btn-instagram-gradient svg {
+  color: #FFFFFF !important;
+  fill: currentColor !important;
+}
+
+/* Highlight & Conversion CTAs (Signature Gradient 2: Pink -> Orange) */
+.promo-cta-btn,
+.setup-cta-btn,
+.banner-btn-primary {
+  background: linear-gradient(135deg, #EC4899 0%, #FF8A3D 100%) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.35) !important;
+  font-weight: 800 !important;
+  transition: all 0.25s ease !important;
+}
+
+.promo-cta-btn:hover,
+.setup-cta-btn:hover,
+.banner-btn-primary:hover {
+  background: linear-gradient(135deg, #DB2777 0%, #F97316 100%) !important;
+  box-shadow: 0 8px 26px rgba(236, 72, 153, 0.48) !important;
+  transform: translateY(-2px) !important;
+  color: #FFFFFF !important;
+}
+
+/* Secondary Action Buttons */
+.sy-nav-btn-secondary,
+.um-nav-buttons .btn:not(.primary),
+.btn:not(.primary),
+.custom-btn-secondary,
+.hero-btn-secondary,
+.btn-outline,
+.ind-cta-secondary {
+  background-color: #FFFFFF !important;
+  color: var(--sy-neutral-text-primary) !important;
+  border: 1.5px solid var(--sy-neutral-border) !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+.sy-nav-btn-secondary:hover,
+.um-nav-buttons .btn:not(.primary):hover,
+.btn:not(.primary):hover,
+.custom-btn-secondary:hover,
+.hero-btn-secondary:hover,
+.btn-outline:hover,
+.ind-cta-secondary:hover {
+  background-color: var(--sy-neutral-bg) !important;
+  border-color: var(--sy-brand-indigo) !important;
+  color: var(--sy-brand-indigo) !important;
+  box-shadow: 0 2px 10px rgba(75, 46, 235, 0.08) !important;
+  text-decoration: none !important;
+}
+
+/* ==========================================================================
+   TOP ANNOUNCEMENT / MAGIC BAR
+   ========================================================================== */
+
+#aisensy-magic-bar,
+#samyoj-magic-bar {
+  background: linear-gradient(90deg, #F8FAFF 0%, rgba(99, 102, 241, 0.10) 30%, rgba(168, 85, 247, 0.12) 50%, rgba(236, 72, 153, 0.10) 70%, #F8FAFF 100%) !important;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.18) !important;
+}
+
+#aisensy-magic-bar .mb-pill,
+#samyoj-magic-bar .mb-pill {
+  background: var(--sy-brand-indigo) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(75, 46, 235, 0.32) !important;
+}
+
+#aisensy-magic-bar .mb-icon,
+#samyoj-magic-bar .mb-icon {
+  color: var(--sy-brand-purple) !important;
+}
+
+#aisensy-magic-bar .mb-title strong,
+#samyoj-magic-bar .mb-title strong {
+  color: var(--sy-brand-indigo) !important;
+}
+
+#aisensy-magic-bar .mb-cta,
+#samyoj-magic-bar .mb-cta {
+  color: var(--sy-brand-indigo) !important;
+}
+
+#aisensy-magic-bar .mb-cta svg,
+#samyoj-magic-bar .mb-cta svg {
+  color: var(--sy-brand-indigo) !important;
+}
+
+/* ==========================================================================
+   CHANNEL BADGES & ACCENTS
+   ========================================================================== */
+
+.sy-channel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.sy-channel-badge.wa {
+  background-color: rgba(37, 211, 102, 0.12);
+  color: var(--sy-channel-whatsapp);
+  border: 1px solid rgba(37, 211, 102, 0.25);
+}
+
+.sy-channel-badge.ig {
+  background: linear-gradient(45deg, rgba(228, 64, 95, 0.12), rgba(252, 175, 69, 0.12));
+  color: var(--sy-channel-instagram-pink);
+  border: 1px solid rgba(228, 64, 95, 0.25);
+}
+
+.sy-channel-badge.fb {
+  background-color: rgba(24, 119, 242, 0.12);
+  color: var(--sy-channel-facebook);
+  border: 1px solid rgba(24, 119, 242, 0.25);
+}
+
+.sy-channel-badge.ads {
+  background-color: rgba(0, 164, 255, 0.12);
+  color: var(--sy-channel-meta-ads);
+  border: 1px solid rgba(0, 164, 255, 0.25);
+}
+
+/* ==========================================================================
+   PRICING & CARD HIGHLIGHTS
+   ========================================================================== */
+
+/* Popular Plan Badge & Borders */
+.pricing-popular-badge,
+.plan-highlight-pill,
+.sps-popular-pill {
+  background: var(--sy-gradient-1) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3) !important;
+}
+
+.pricing-card.featured,
+.plan-card.featured {
+  border-color: var(--sy-brand-indigo) !important;
+  box-shadow: 0 12px 30px rgba(75, 46, 235, 0.14) !important;
+}
+
+/* Stepper / Process Highlights */
+.sps-step-num.active,
+.stepper-num.active {
+  background-color: var(--sy-brand-indigo) !important;
+  color: #FFFFFF !important;
+  border-color: var(--sy-brand-indigo) !important;
+}
+
+/* Feature Checkmarks */
+.feat-check,
+.pricing-check {
+  color: var(--sy-support-success) !important;
+}
+
+/* ==========================================================================
+   GLOBAL BRAND ACCENTS & LINKS
+   ========================================================================== */
+
+a.link,
+a.text-link {
+  color: var(--sy-brand-indigo) !important;
+}
+
+a.link:hover,
+a.text-link:hover {
+  color: var(--sy-brand-purple) !important;
+}
+
+/* Footer Accent Alignment */
+.sy-footer-col h4::after {
+  background: var(--sy-brand-indigo) !important;
+}
+
+.sy-footer-links a:hover,
+.sy-footer-contact a:hover {
+  color: var(--sy-brand-indigo) !important;
+}
+
+.sy-footer-links svg {
+  background: var(--sy-primary-subtle) !important;
+  color: var(--sy-brand-indigo) !important;
+}
+
+.sy-footer-social a:hover {
+  background: var(--sy-primary-subtle) !important;
+  color: var(--sy-brand-indigo) !important;
+}
+
+/* Mobile Drawer Links */
+.um-nav-drawer.sy-drawer .sy-drawer-link[aria-current="page"],
+.um-nav-drawer.sy-drawer .um-drawer-links > li > a[aria-current="page"] {
+  background: var(--sy-primary-subtle) !important;
+  color: var(--sy-brand-indigo) !important;
+}
+
+.um-nav-drawer.sy-drawer .sy-drawer-link[aria-current="page"] .sy-drawer-chev,
+.um-nav-drawer.sy-drawer .um-drawer-links > li > a[aria-current="page"] .sy-drawer-chev {
+  color: var(--sy-brand-indigo) !important;
+}
+
+.sy-drawer-ico {
+  color: var(--sy-brand-indigo) !important;
+}
+
+.um-nav-drawer.sy-drawer .um-drawer-buttons > button.primary,
+.um-nav-drawer.sy-drawer .um-drawer-buttons > a.primary,
+.um-nav-drawer.sy-drawer .sy-drawer-btns > button.primary {
+  background: var(--sy-brand-indigo) !important;
+  color: #FFFFFF !important;
+}
+
+.um-nav-drawer.sy-drawer .um-drawer-buttons > button.primary:hover,
+.um-nav-drawer.sy-drawer .um-drawer-buttons > a.primary:hover,
+.um-nav-drawer.sy-drawer .sy-drawer-btns > button.primary:hover {
+  background: var(--sy-primary-hover) !important;
+}
+
+/* ==========================================================================
+   INTERACTIVE SECTIONS & ACCENTS
+   ========================================================================== */
+
+/* Highlight Text (Headlines & Title Accents) */
+/* Highlight Text (Headlines & Title Accents with Signature Gradients) */
+.highlight-green,
+.custom-section-title .highlight-green,
+.custom-hero-title .highlight-green,
+.broadcast-title .highlight-green,
+.ind-accent,
+.feat-accent,
+.sps-gs-left h3 span,
+.sps-integrations-banner h3 span,
+.sps-revenue-text h3 span {
+  background: linear-gradient(135deg, #4B2EEB 0%, #7A3BFF 50%, #EC4899 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block !important;
+}
+
+.scribble-underline path {
+  stroke: var(--sy-brand-purple) !important;
+}
+
+/* Trust Pill Badges & Award Tags */
+.custom-award-badge {
+  background: linear-gradient(135deg, rgba(75, 46, 235, 0.08) 0%, rgba(122, 59, 255, 0.08) 100%) !important;
+  border-color: rgba(122, 59, 255, 0.25) !important;
+  color: var(--sy-brand-purple) !important;
+}
+
+/* FAQ Accordion Styling */
+.custom-faq-item[open] {
+  border-color: var(--sy-primary-border) !important;
+  box-shadow: 0 4px 16px rgba(75, 46, 235, 0.12) !important;
+}
+
+.custom-faq-icon {
+  color: var(--sy-brand-purple) !important;
+}
+
+/* Video Player Highlights (Signature Gradient 1) */
+.video-demo-badge .badge-dot {
+  background-color: var(--sy-brand-pink) !important;
+}
+
+.video-play-btn-circle {
+  background: linear-gradient(135deg, #6366F1 0%, #A855F7 100%) !important;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.48) !important;
+}
+
+.video-play-btn-circle:hover {
+  background: linear-gradient(135deg, #4B2EEB 0%, #7A3BFF 100%) !important;
+  transform: scale(1.08) !important;
+}
+
+.controls-timeline-progress,
+.controls-timeline-fill {
+  background: linear-gradient(90deg, #4B2EEB 0%, #7A3BFF 50%, #EC4899 100%) !important;
+}
+
+/* Feature Cards & Banner Icons */
+.feature-card-icon-wrapper,
+.banner-icon-wrapper,
+.stat-icon-wrapper {
+  color: var(--sy-brand-indigo) !important;
+  background-color: var(--sy-primary-subtle) !important;
+}
+
+.banner-btn-primary {
+  background-color: var(--sy-brand-indigo) !important;
+  color: #FFFFFF !important;
+}
+
+.banner-btn-primary:hover {
+  background-color: var(--sy-primary-hover) !important;
+}
+
+/* Stepper Process */
+.sps-step-num {
+  background-color: var(--sy-brand-indigo) !important;
+}
+
+.sps-step:hover .sps-step-icon {
+  border-color: var(--sy-brand-indigo) !important;
+  box-shadow: 0 8px 24px rgba(75, 46, 235, 0.18) !important;
+}
+
+/* Sections & Banners Background Tint (Neutral Slate #F8FAFF) */
+.sps-gs-banner,
+.custom-stats-banner,
+.sps-revenue-banner {
+  background-color: var(--sy-neutral-bg) !important;
+  border-color: var(--sy-neutral-border) !important;
+}
+
+/* Badge Pills & Section Tags */
+.custom-badge-pill,
+.features-header-badge,
+.broadcast-list-icon,
+.setup-trust-icon {
+  background-color: var(--sy-primary-subtle) !important;
+  color: var(--sy-brand-indigo) !important;
+  border-color: var(--sy-primary-border) !important;
+}
+
+.custom-badge-pill svg,
+.features-header-badge svg,
+.broadcast-list-icon svg,
+.setup-trust-icon svg {
+  color: var(--sy-brand-purple) !important;
+}
+
+/* Card Checklist Icons & Links */
+.card-checklist-item svg {
+  color: var(--sy-support-success) !important;
+}
+
+.card-footer-link {
+  color: var(--sy-brand-indigo) !important;
+}
+
+.card-footer-link:hover {
+  color: var(--sy-primary-hover) !important;
+}
+
+/* -------------------------------------------------------------------------
+   MULTI-COLOR BRAND DISTRIBUTION (Indigo, Purple, Pink, Orange)
+   ------------------------------------------------------------------------- */
+
+/* Section 2: 4 Feature Cards (Each gets a dedicated brand color) */
+.custom-features-column .feature-card-item:nth-of-type(1) .feature-card-icon-wrapper {
+  background-color: rgba(75, 46, 235, 0.1) !important;
+  color: var(--sy-brand-indigo) !important;
+  border: 1px solid rgba(75, 46, 235, 0.2) !important;
+}
+
+.custom-features-column .feature-card-item:nth-of-type(2) .feature-card-icon-wrapper {
+  background-color: rgba(122, 59, 255, 0.1) !important;
+  color: var(--sy-brand-purple) !important;
+  border: 1px solid rgba(122, 59, 255, 0.2) !important;
+}
+
+.custom-features-column .feature-card-item:nth-of-type(3) .feature-card-icon-wrapper {
+  background-color: rgba(255, 61, 142, 0.1) !important;
+  color: var(--sy-brand-pink) !important;
+  border: 1px solid rgba(255, 61, 142, 0.2) !important;
+}
+
+.custom-features-column .feature-card-item:nth-of-type(4) .feature-card-icon-wrapper {
+  background-color: rgba(255, 138, 61, 0.1) !important;
+  color: var(--sy-brand-orange) !important;
+  border: 1px solid rgba(255, 138, 61, 0.2) !important;
+}
+
+/* Section 3: Broadcast 3-Item Color Accents */
+.broadcast-list-item:nth-child(1) .broadcast-list-icon {
+  background-color: rgba(75, 46, 235, 0.1) !important;
+  color: var(--sy-brand-indigo) !important;
+}
+.broadcast-list-item:nth-child(2) .broadcast-list-icon {
+  background-color: rgba(122, 59, 255, 0.1) !important;
+  color: var(--sy-brand-purple) !important;
+}
+.broadcast-list-item:nth-child(3) .broadcast-list-icon {
+  background-color: rgba(255, 61, 142, 0.1) !important;
+  color: var(--sy-brand-pink) !important;
+}
+
+/* Section 5: Stepper 4-Step Color Timeline */
+.setup-step-item:nth-child(1) .setup-step-icon {
+  background-color: rgba(75, 46, 235, 0.12) !important;
+  color: var(--sy-brand-indigo) !important;
+  border: 1.5px solid rgba(75, 46, 235, 0.3) !important;
+}
+
+.setup-step-item:nth-child(2) .setup-step-icon {
+  background: linear-gradient(135deg, #6366F1 0%, #A855F7 100%) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid transparent !important;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.38) !important;
+}
+.setup-step-item:nth-child(2) .setup-step-icon svg {
+  color: #FFFFFF !important;
+}
+
+.setup-step-item:nth-child(3) .setup-step-icon {
+  background-color: rgba(255, 61, 142, 0.12) !important;
+  color: var(--sy-brand-pink) !important;
+  border: 1.5px solid rgba(255, 61, 142, 0.3) !important;
+}
+
+.setup-step-item:nth-child(4) .setup-step-icon {
+  background-color: rgba(255, 138, 61, 0.12) !important;
+  color: var(--sy-brand-orange) !important;
+  border: 1.5px solid rgba(255, 138, 61, 0.3) !important;
+}
+
+/* Trust Stats 4-Pill Row: Dedicated Colors */
+.stats-grid .stat-item:nth-child(1) .stat-icon-wrapper {
+  color: var(--sy-brand-indigo) !important;
+  background-color: rgba(75, 46, 235, 0.1) !important;
+}
+.stats-grid .stat-item:nth-child(2) .stat-icon-wrapper {
+  color: var(--sy-brand-purple) !important;
+  background-color: rgba(122, 59, 255, 0.1) !important;
+}
+.stats-grid .stat-item:nth-child(3) .stat-icon-wrapper {
+  color: var(--sy-brand-pink) !important;
+  background-color: rgba(255, 61, 142, 0.1) !important;
+}
+.stats-grid .stat-item:nth-child(4) .stat-icon-wrapper {
+  color: var(--sy-brand-orange) !important;
+  background-color: rgba(255, 138, 61, 0.1) !important;
+}
+
+/* Stepper Process Numbers */
+.sps-step-item:nth-child(1) .sps-step-num,
+.sps-step:nth-child(1) .sps-step-num { background-color: var(--sy-brand-indigo) !important; }
+.sps-step-item:nth-child(2) .sps-step-num,
+.sps-step:nth-child(2) .sps-step-num { background-color: var(--sy-brand-purple) !important; }
+.sps-step-item:nth-child(3) .sps-step-num,
+.sps-step:nth-child(3) .sps-step-num { background-color: var(--sy-brand-pink) !important; }
+.sps-step-item:nth-child(4) .sps-step-num,
+.sps-step:nth-child(4) .sps-step-num { background-color: var(--sy-brand-orange) !important; }
+
+/* Setup Headline Highlight & Stepper Connector */
+.setup-title span,
+.sps-header h2 span,
+.sps-avatar-cluster p span {
+  background: linear-gradient(135deg, #EC4899 0%, #FF8A3D 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  display: inline-block !important;
+}
+
+/* Testimonial Cards & Quotes */
+.sps-testimonial-card {
+  background: #FFFFFF !important;
+  border: 1px solid var(--sy-neutral-border) !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03) !important;
+}
+
+.sps-quote-icon {
+  color: var(--sy-brand-purple) !important;
+}
+
+.sps-5stars svg {
+  fill: var(--sy-support-warning) !important;
+}
+
+/* Promo Banner (Official UI Element Example from Guideline) */
+.setup-promo-banner {
+  background: linear-gradient(135deg, rgba(75, 46, 235, 0.04) 0%, rgba(122, 59, 255, 0.07) 100%) !important;
+  border: 1px solid rgba(75, 46, 235, 0.16) !important;
+  box-shadow: 0 10px 30px rgba(75, 46, 235, 0.05) !important;
+}
+
+.promo-cta-btn {
+  background-color: var(--sy-brand-indigo) !important;
+  box-shadow: 0 8px 24px rgba(75, 46, 235, 0.28) !important;
+}
+
+.promo-cta-btn:hover {
+  background-color: var(--sy-primary-hover) !important;
+  box-shadow: 0 12px 32px rgba(75, 46, 235, 0.38) !important;
+}
+
+.promo-cta-info svg,
+.setup-cta-info svg {
+  color: var(--sy-brand-purple) !important;
+}
+

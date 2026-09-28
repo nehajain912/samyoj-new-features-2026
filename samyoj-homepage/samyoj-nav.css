@@ -1,3 +1,5 @@
+@import url('samyoj-theme.css');
+
 .um-nav-wrapper {
       color: var(--color-text-primary);
       display: flex;
@@ -738,25 +740,26 @@ body:not(.noScript) .umso-header .umso-animated.umso-animating {
 
 .sy-nav-links li a {
   text-decoration: none !important;
-  color: #10231e !important;
+  color: #0F172A !important;
   font-size: 15px !important;
   font-weight: 600 !important;
   padding: 8px 16px !important;
   border-radius: 999px !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   display: inline-flex !important;
   align-items: center !important;
 }
 
 .sy-nav-links li a:hover {
-  color: #03b85d !important;
-  background-color: #f0faf4 !important;
+  color: #4B2EEB !important;
+  background-color: rgba(75, 46, 235, 0.06) !important;
 }
 
 .sy-nav-links li a.active,
 .sy-nav-links li a[aria-current="page"] {
-  background-color: #e8f9f0 !important;
-  color: #00b859 !important;
+  background-color: rgba(75, 46, 235, 0.08) !important;
+  color: #4B2EEB !important;
+  border: 1px solid rgba(75, 46, 235, 0.22) !important;
 }
 
 .sy-nav-actions {
@@ -775,44 +778,49 @@ body:not(.noScript) .umso-header .umso-animated.umso-animating {
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1.5px solid transparent;
   line-height: 1.2;
 }
 
 .sy-nav-btn-primary {
-  background-color: #03cf65;
+  background-color: #4B2EEB;
   color: #ffffff;
-  border-color: #03cf65;
+  border-color: #4B2EEB;
+  box-shadow: 0 4px 14px rgba(75, 46, 235, 0.26);
 }
 
 .sy-nav-btn-primary:hover {
-  background-color: #00b859;
-  border-color: #00b859;
+  background-color: #3b22c7;
+  border-color: #3b22c7;
   color: #ffffff;
+  box-shadow: 0 6px 18px rgba(75, 46, 235, 0.36);
+  transform: translateY(-1px);
   text-decoration: none;
 }
 
 .sy-nav-btn-secondary {
   background-color: transparent;
-  color: #10231e;
-  border-color: #dce8e2;
+  color: #0F172A;
+  border-color: #E2E8F0;
 }
 
 .sy-nav-btn-secondary:hover {
-  background-color: #f4f6f5;
-  border-color: #10231e;
+  background-color: #F8FAFF;
+  border-color: #4B2EEB;
+  color: #4B2EEB;
+  box-shadow: 0 2px 8px rgba(75, 46, 235, 0.08);
   text-decoration: none;
 }
 
 .sy-nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid #dce8e2;
+  border: 1px solid #E2E8F0;
   border-radius: 8px;
   padding: 6px;
   cursor: pointer;
-  color: #10231e;
+  color: #0F172A;
 }
 
 .sy-nav-drawer {
