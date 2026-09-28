@@ -11,6 +11,15 @@
       flex-shrink: 0;
     }
 
+    .um-nav-wrapper .um-nav-children img,
+    ._730f12a7 img {
+      display: block;
+      height: 52px;
+      width: auto;
+      max-height: 56px;
+      object-fit: contain;
+    }
+
     .um-nav-wrapper.um-children-centered {
       display: flex;
       justify-content: space-between;
