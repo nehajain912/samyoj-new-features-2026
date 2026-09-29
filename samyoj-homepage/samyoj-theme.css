@@ -113,8 +113,67 @@
 }
 
 /* ==========================================================================
-   BUTTONS & CTAs (60-20-10-10 Rule: Indigo Primary)
+   BUTTONS & CTAs (Unified Dimensions & Typography, 60-20-10-10 Rule)
    ========================================================================== */
+
+/* Standardized Button Dimensions & Linebreak Prevention */
+.btn,
+.btn.primary,
+.custom-btn-primary,
+.custom-btn-secondary,
+.btn-green,
+.btn-outline,
+.setup-cta-btn,
+.promo-cta-btn,
+.banner-btn-primary,
+.feat-cta-btn,
+.btn-primary-sy,
+.btn-outline-sy,
+.pf-cta-btn,
+.ind-cta-secondary,
+.ind-cta-actions .btn.primary,
+.sps-revenue-actions .btn,
+.hero-btn-secondary,
+.btn-instagram-gradient {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 13px 26px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  border-radius: 10px !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  min-height: 48px !important;
+  width: auto !important;
+  max-width: fit-content !important;
+}
+
+/* Ensure SVG icons inside buttons scale uniformly without distortion */
+.btn svg,
+.custom-btn-primary svg,
+.custom-btn-secondary svg,
+.btn-green svg,
+.btn-outline svg,
+.setup-cta-btn svg,
+.promo-cta-btn svg,
+.banner-btn-primary svg,
+.feat-cta-btn svg,
+.btn-primary-sy svg,
+.btn-outline-sy svg,
+.pf-cta-btn svg,
+.ind-cta-actions .btn.primary svg,
+.ind-cta-secondary svg,
+.btn-instagram-gradient svg {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  flex-shrink: 0 !important;
+}
 
 /* Primary Action Buttons (Signature Brand Gradient 1: Indigo -> Purple) */
 .sy-nav-btn-primary,
@@ -161,15 +220,21 @@ button._e70f123e.btn.primary:hover {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 10px !important;
+  gap: 8px !important;
   font-size: 15px !important;
   font-weight: 700 !important;
-  padding: 14px 28px !important;
+  line-height: 1.25 !important;
+  padding: 13px 26px !important;
+  min-height: 48px !important;
   border-radius: 10px !important;
   box-shadow: 0 6px 22px rgba(228, 64, 95, 0.38) !important;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
   text-decoration: none !important;
   cursor: pointer !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  width: auto !important;
+  max-width: fit-content !important;
 }
 
 .btn-instagram-gradient:hover {
@@ -181,8 +246,21 @@ button._e70f123e.btn.primary:hover {
 }
 
 .btn-instagram-gradient svg {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+  flex-shrink: 0 !important;
   color: #FFFFFF !important;
+}
+
+.btn-instagram-gradient svg:first-child {
   fill: currentColor !important;
+}
+
+.btn-instagram-gradient svg:last-child {
+  fill: none !important;
+  stroke: currentColor !important;
 }
 
 /* Highlight & Conversion CTAs (Signature Gradient 2: Pink -> Orange) */
